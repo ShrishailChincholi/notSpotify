@@ -131,3 +131,61 @@ body{
 }
 
 /* main */
+
+.main {
+    display: block;
+    flex-direction: column;
+}
+
+.left {
+    background-color: #121212;
+    height: 720px;
+    width: 440px;
+    border-radius: 12px;
+}
+
+.labary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.labary p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.labary button {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 25px;
+    width: 30px;
+    font-size: 18px;
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+}
+
+.left-footer {
+    bottom: 0px;
+    height: 100px;
+    width: 400px;
+    margin-top: 558px;
+    font-size: 15px;
+}
+
+.atags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 15px;
+    margin: 32px 0;
+    padding: 0 24px;
+    text-align: start
+}
+
+.atags a{
+    color: #4c4b4c;
+    margin-right: 15px;
+}
