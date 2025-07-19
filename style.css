@@ -3,10 +3,11 @@
     padding: 0px;
 }
 
-body{
+body {
     background-color: black;
     color: white;
 }
+
 /* header */
 .nav {
     height: 60px;
@@ -88,7 +89,7 @@ body{
 
 .nav-secondchild {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     margin-left: 288px;
 }
 
@@ -98,7 +99,7 @@ body{
     background-color: white;
 }
 
-.nav-secondchild button{
+.nav-secondchild button {
     background-color: #000000;
     border: none;
     width: 69px;
@@ -106,7 +107,7 @@ body{
     font-size: 0.8rem;
 }
 
-.first-nav{
+.first-nav {
     background-color: #000000;
     border: none;
     color: white;
@@ -114,7 +115,7 @@ body{
     display: flex;
 }
 
-.second-nav{
+.second-nav {
     background-color: #000000;
     border: none;
     color: white;
@@ -124,17 +125,20 @@ body{
     margin-left: 50px;
     gap: 48px;
 }
-.login{
+
+.login {
     background-color: white;
-  
+
     width: 60px;
 }
 
 /* main */
 
 .main {
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .left {
@@ -171,7 +175,6 @@ body{
     bottom: 0px;
     height: 100px;
     width: 400px;
-    margin-top: 558px;
     font-size: 15px;
 }
 
@@ -185,7 +188,7 @@ body{
     text-align: start
 }
 
-.atags a{
+.atags a {
     color: #4c4b4c;
     margin-right: 15px;
 }
@@ -280,7 +283,7 @@ body{
 }
 
 .songboxp {
-    margin:20px;
+    margin: 20px;
     width: 198px;
     font-size: 1rem;
 
@@ -312,15 +315,16 @@ body{
 }
 
 /* play bar */
-.palybar{
-    position:fixed;
-    bottom:0;
-    width: 100%;
+.palybar {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 68%;
     padding: 12px;
     background-color: green;
 }
 
-.songbutton{
+.songbutton {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -328,16 +332,17 @@ body{
 }
 
 /* adding songs */
-.songList{
+.songList {
     height: 550px;
     overflow: auto;
     margin-bottom: 34px 0px;
 }
-.songList ul{
+
+.songList ul {
     padding: 0 12px;
 }
 
-.songList ul li{
+.songList ul li {
     list-style-type: decimal;
     display: flex;
     gap: 13px;
@@ -349,18 +354,58 @@ body{
     border-radius: 12px;
 }
 
-.songList .info{
+.songList .info {
     width: 300px;
 }
 
-.playnow{
+.playnow {
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
-.playnow span{
+
+.playnow span {
     font-size: 10px;
     width: 100px;
     padding: 12px;
-   
+
+}
+
+/* seek bar */
+
+.seekbar {
+    height: 2px;
+    width: 97%;
+    border: 2px solid red;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.circule {
+    width: 10px;
+    height: 13px;
+    border-radius: 13px;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    background-color: white;
+    transition: left 0.5s;
+    cursor: pointer;
+
+}
+
+.songbutton i {
+    cursor: pointer;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.songinfo .songtime {
+    color: white;
 }
